@@ -2088,12 +2088,13 @@ a {
 
 /* Responsive Media Queries */
 @media (max-width: 992px) {
-    .hero-title {
-        font-size: 3rem;
+    .hero-content {
+        margin-left: 50px;
+        max-width: 460px;
     }
 
-    .hero-subtitle {
-        font-size: 1.8rem;
+    .hero-headline-big {
+        font-size: 2.5rem;
     }
 
     .hero-overlay-left {
@@ -2101,18 +2102,50 @@ a {
         background: linear-gradient(to right, rgba(9, 8, 12, 0.95) 0%, rgba(9, 8, 12, 0.8) 60%, rgba(9, 8, 12, 0.5) 100%);
     }
 
-    .about-grid,
-    .skills-grid,
+    .about-container-new,
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    .about-image-col {
+        justify-content: center;
+    }
+
+    .about-text-col {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-headline {
+        font-size: 2.5rem;
+    }
+
+    .bg-name-first {
+        font-size: 5.5rem;
+    }
+
+    .bg-name-second {
+        font-size: 2.8rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 16px;
+    }
+
+    .nav-phone span {
+        display: none;
+    }
+
+    .nav-phone {
+        padding: 8px;
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
@@ -2136,16 +2169,26 @@ a {
         display: block;
     }
 
-    .nav-cta {
+    .btn-hire-me {
         display: none;
     }
 
-    .hero-title {
-        font-size: 2.4rem;
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
-    .hero-subtitle {
-        font-size: 1.4rem;
+    .hero-headline-big {
+        font-size: 2.1rem;
+    }
+
+    .hero-description-cinematic {
+        font-size: 0.95rem;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
     }
 
     .section-title {
@@ -2157,6 +2200,7 @@ a {
         align-items: flex-start;
         gap: 16px;
         width: 100%;
+        padding: 18px 20px;
     }
 
     .stat-divider {
@@ -2164,8 +2208,25 @@ a {
         height: 1px;
     }
 
-    .about-highlights-grid {
-        grid-template-columns: 1fr;
+    .about-headline {
+        font-size: 2.1rem;
+    }
+
+    .services-tag-sm {
+        font-size: 1.4rem;
+    }
+
+    .services-title-sm {
+        font-size: 2.4rem;
+    }
+
+    .services-hero-text {
+        font-size: 1.4rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 24px;
     }
 
     .footer-content {
@@ -2177,19 +2238,8 @@ a {
     .about-bg-title,
     .showreel-bg-title,
     .work-bg-title,
-    .reviews-bg-title,
-    .contact-bg-title,
-    .contact-transparent-title {
+    .reviews-bg-title {
         font-size: 4.5rem;
-    }
-
-    .contact-big-title {
-        font-size: 4.5rem;
-    }
-
-    .contact-overlap-title {
-        font-size: 2.2rem;
-        margin-top: -28px;
     }
 }
 
@@ -2198,20 +2248,90 @@ a {
     .about-bg-title,
     .showreel-bg-title,
     .work-bg-title,
-    .reviews-bg-title,
-    .contact-bg-title,
-    .contact-transparent-title {
+    .reviews-bg-title {
         font-size: 2.8rem;
         white-space: normal;
     }
 
-    .contact-big-title {
-        font-size: 2.8rem;
-        white-space: normal;
+    .container {
+        padding: 0 16px;
     }
 
-    .contact-overlap-title {
-        font-size: 1.6rem;
-        margin-top: -18px;
+    .logo-text {
+        font-size: 0.95rem;
+    }
+
+    .hero-headline-big {
+        font-size: 1.7rem;
+    }
+
+    .bg-name-first {
+        font-size: 3.6rem;
+    }
+
+    .bg-name-second {
+        font-size: 1.9rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-card-stack {
+        width: 260px;
+        height: 320px;
+    }
+
+    .stack-card {
+        width: 150px;
+        height: 220px;
+    }
+
+    .stack-card.card-1 {
+        top: 31px;
+        left: -61px;
+    }
+
+    .stack-card.card-2 {
+        top: 19px;
+        left: -35px;
+    }
+
+    .stack-card.card-3 {
+        top: 9px;
+        left: -10px;
+    }
+
+    .stack-card.card-4 {
+        top: 9px;
+        left: 16px;
+    }
+
+    .stack-card.card-5 {
+        top: 19px;
+        left: 41px;
+    }
+
+    .stack-card.card-6 {
+        top: 31px;
+        left: 69px;
+    }
+
+    .review-card {
+        min-width: 260px;
+        padding: 24px 20px;
+    }
+
+    .section {
+        padding: 60px 0;
     }
 }
