@@ -2335,3 +2335,153 @@ a {
         padding: 60px 0;
     }
 }
+/* =====================================================================
+   MOBILE FIX PASS — proper responsive behavior, nothing oversized,
+   nothing hidden/invisible, background stays visible, text stays readable.
+   ===================================================================== */
+
+img, svg, video, iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    html { font-size: 15px; }
+
+    body { overflow-x: hidden; }
+
+    .container { padding: 0 18px; }
+
+    /* ---- Hero: keep photo visible + text always readable ---- */
+    .hero-section {
+        min-height: 100svh;
+        padding-top: 85px;
+    }
+
+    .hero-bg-image {
+        object-position: 65% top;
+    }
+
+    .hero-overlay-left {
+        width: 100%;
+        background: linear-gradient(to bottom,
+            rgba(9, 8, 12, 0.45) 0%,
+            rgba(9, 8, 12, 0.68) 45%,
+            rgba(9, 8, 12, 0.92) 100%);
+    }
+
+    /* Giant watermark name behind photo — hide, it only clips/overflows on phones */
+    .hero-bg-name-wrapper { display: none; }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 18px;
+        box-sizing: border-box;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+        margin-bottom: 16px;
+    }
+
+    .hero-headline-big {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+        margin-bottom: 16px;
+    }
+
+    .hero-description-cinematic {
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hero-actions { margin-bottom: 30px; }
+
+    .hero-stats {
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .stat-number { font-size: 1.3rem; }
+    .stat-label { font-size: 0.68rem; }
+
+    /* Any near-black text on a dark background gets a soft sand glow so
+       it never disappears, on mobile only */
+    .text-black,
+    .services-title-sm,
+    .stack-card-title {
+        text-shadow: 0 0 14px rgba(244, 228, 208, 0.55);
+    }
+
+    /* ---- About ---- */
+    .about-section { padding: 40px 0 20px 0; }
+    .about-container-new { padding: 40px 0 0 0; gap: 28px; }
+    .about-image-col { padding-left: 0; }
+    .about-image-card { max-width: 260px; margin: 0 auto; }
+    .about-headline { font-size: clamp(1.6rem, 7vw, 2rem); text-align: center; }
+    .about-text-p { font-size: 0.92rem; text-align: center; }
+
+    /* ---- Generic section titles/spacing ---- */
+    .section { padding: 50px 0; }
+    .section-title { font-size: clamp(1.6rem, 7vw, 2rem); }
+
+    /* ---- Services fan stack: shrink + recenter so cards never clip off-screen ---- */
+    .services-section { padding: 40px 0 60px 0; }
+    .services-right-col { min-height: 320px; }
+    .services-card-stack { width: 270px; height: 320px; }
+    .stack-card { width: 155px; height: 225px; padding: 12px; }
+    .stack-card.card-1 { top: 33px; left: -66px; }
+    .stack-card.card-2 { top: 20px; left: -38px; }
+    .stack-card.card-3 { top: 10px; left: -10px; }
+    .stack-card.card-4 { top: 10px; left: 16px; }
+    .stack-card.card-5 { top: 20px; left: 44px; }
+    .stack-card.card-6 { top: 33px; left: 73px; }
+    .stack-card-title { font-size: 0.88rem; }
+    .stack-card-sub { font-size: 0.68rem; }
+
+    /* ---- Reviews ---- */
+    .reviews-section .section-header { margin-bottom: 24px; }
+    .review-card { min-width: 88vw; padding: 22px 18px; }
+    .review-text { font-size: 0.9rem; margin-bottom: 20px; }
+
+    /* ---- Contact ---- */
+    .contact-section { padding: 10px 0 60px 0; }
+    .contact-info, .contact-form { padding: 20px; }
+    .contact-grid { gap: 20px; }
+    .info-item { gap: 12px; }
+
+    /* ---- Footer / floating button ---- */
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        bottom: 18px;
+        right: 18px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra-small phones (SE, small Android) */
+@media (max-width: 400px) {
+    .hero-headline-big { font-size: 1.35rem; }
+    .about-headline { font-size: 1.5rem; }
+    .services-tag-sm { font-size: 1.2rem; }
+    .services-title-sm { font-size: 1.9rem; }
+    .services-hero-text { font-size: 1.1rem; }
+
+    .services-card-stack { width: 230px; height: 280px; }
+    .stack-card { width: 130px; height: 190px; padding: 10px; }
+    .stack-card.card-1 { top: 30px; left: -52px; }
+    .stack-card.card-2 { top: 18px; left: -30px; }
+    .stack-card.card-3 { top: 9px; left: -8px; }
+    .stack-card.card-4 { top: 9px; left: 13px; }
+    .stack-card.card-5 { top: 18px; left: 35px; }
+    .stack-card.card-6 { top: 30px; left: 58px; }
+
+    .review-card { min-width: 85vw; padding: 18px 14px; }
+
+    .logo-text { font-size: 0.85rem; }
+    .nav-container { padding: 0 12px; }
+}
