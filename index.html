@@ -150,182 +150,180 @@
             </div>
         </section>
 
+        <!-- Certifications Section -->
+        <section class="section certs-section" id="certifications">
+            <div class="container services-container-new">
+                <div class="services-left-col">
+                    <div class="services-header-left">
+                        <span class="services-tag-sm">VERIFIED</span>
+                        <h2 class="services-title-sm">Certifications</h2>
+                    </div>
+                    <p class="services-hero-text">
+                        Practical, <span class="text-black">industry-recognized</span> credentials in digital
+                        marketing, Google Ads &amp; HR — proof I back my skills with real training, not just claims.
+                    </p>
+                </div>
+
+                <div class="certs-right-col">
+                    <div class="certs-card-stack">
+                        <div class="cert-card cert-card-1 glass-card" data-cert="hr" tabindex="0" role="button"
+                            aria-label="View HR Management certificate">
+                            <div class="cert-card-inner">
+                                <div class="cert-icon-box"><i class="fa-solid fa-users"></i></div>
+                                <h4 class="cert-card-title">HR Management</h4>
+                                <p class="cert-card-sub">UniAthena &times; Cambridge Intl.</p>
+                                <span class="cert-view-tag"><i class="fa-solid fa-eye"></i> View Certificate</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card cert-card-2 glass-card" data-cert="googleads" tabindex="0" role="button"
+                            aria-label="View Google Ads Search certificate">
+                            <div class="cert-card-inner">
+                                <div class="cert-icon-box cert-icon-box-img"><img
+                                        src="./assets/certificate-googleads-badge.png" alt="Google Ads Search Certified"></div>
+                                <h4 class="cert-card-title">Google Ads Search</h4>
+                                <p class="cert-card-sub">Professional Certification</p>
+                                <span class="cert-view-tag"><i class="fa-solid fa-eye"></i> View Certificate</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card cert-card-3 glass-card" data-cert="digitalmarketing" tabindex="0"
+                            role="button" aria-label="View Digital Marketing certificate">
+                            <div class="cert-card-inner">
+                                <div class="cert-icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                                <h4 class="cert-card-title">Digital Marketing</h4>
+                                <p class="cert-card-sub">Fundamentals Certificate</p>
+                                <span class="cert-view-tag"><i class="fa-solid fa-eye"></i> View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Modal -->
+        <div class="cert-modal-overlay" id="cert-modal-overlay">
+            <div class="cert-modal" id="cert-modal">
+                <button class="cert-modal-close" id="cert-modal-close" aria-label="Close certificate">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="cert-modal-body" id="cert-modal-body"></div>
+            </div>
+        </div>
+
         <!-- Work / Projects Section -->
         <section class="section projects-section" id="projects">
-            <div class="work-bg-title-wrapper">
-                <span class="work-bg-title">MY WORK</span>
-            </div>
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title"><span class="text-sand">Featured</span> <span
-                            class="text-black">Projects</span></h2>
+            <!-- Project Categories - Fan Stack (left) + Text (right) -->
+            <div class="container projects-container-new">
+                <div class="projects-right-col">
+                    <div class="project-cat-stack">
+
+                        <div class="project-cat-card cat-card-1 glass-card" data-category="photography" tabindex="0"
+                            role="button" aria-label="View Photography projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/photo-badshahi-mosque.jpg" alt="Photography" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-camera"></i></div>
+                                    <h4 class="project-cat-title">Photography</h4>
+                                    <p class="project-cat-count">7 Photos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-cat-card cat-card-2 glass-card" data-category="webdev" tabindex="0"
+                            role="button" aria-label="View Web Development projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/service-webdev.jpg" alt="Web Development" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-code"></i></div>
+                                    <h4 class="project-cat-title">Web Development</h4>
+                                    <p class="project-cat-count">2 Projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-cat-card cat-card-3 glass-card" data-category="graphicdesign" tabindex="0"
+                            role="button" aria-label="View Graphic Design projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/portfolio-abstract-face.jpg" alt="Graphic Design" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                                    <h4 class="project-cat-title">Graphic Design</h4>
+                                    <p class="project-cat-count">1 Project</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-cat-card cat-card-4 glass-card" data-category="videoediting" tabindex="0"
+                            role="button" aria-label="View Video Editing projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/portfolio-video-timeline.jpg" alt="Video Editing" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-clapperboard"></i></div>
+                                    <h4 class="project-cat-title">Video Editing</h4>
+                                    <p class="project-cat-count">2 Projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-cat-card cat-card-5 glass-card" data-category="socialmedia" tabindex="0"
+                            role="button" aria-label="View Social Media projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/portfolio-social-tree.jpg" alt="Social Media" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-hashtag"></i></div>
+                                    <h4 class="project-cat-title">Social Media</h4>
+                                    <p class="project-cat-count">2 Projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-cat-card cat-card-6 glass-card" data-category="professional" tabindex="0"
+                            role="button" aria-label="View Professional Skills projects">
+                            <div class="project-cat-inner">
+                                <div class="project-cat-img-wrapper">
+                                    <img src="./assets/portfolio-podium-speaker.jpg" alt="Professional Skills" loading="lazy">
+                                </div>
+                                <div class="project-cat-overlay">
+                                    <div class="stack-icon-box"><i class="fa-solid fa-headset"></i></div>
+                                    <h4 class="project-cat-title">Professional Skills</h4>
+                                    <p class="project-cat-count">2 Projects</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="services-left-col">
+                    <div class="services-header-left">
+                        <span class="services-tag-sm">MY WORK</span>
+                        <h2 class="services-title-sm"><span class="text-sand">Featured</span> Projects</h2>
+                    </div>
+                    <p class="services-hero-text">
+                        A curated mix of <span class="text-black">photography, code &amp; design</span> — tap a
+                        category to explore the projects behind it.
+                    </p>
                 </div>
             </div>
 
-            <!-- Portfolio Grid -->
-            <div class="container portfolio-grid-container">
-                <div class="portfolio-grid">
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-badshahi-mosque.jpg" alt="Badshahi Mosque, Lahore" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Badshahi Mosque, Lahore</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-lahore-fort-arches.jpg" alt="Lahore Fort" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Lahore Fort</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/service-webdev.jpg" alt="Java Development Project" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Web Development</span>
-                            <h3 class="portfolio-title">C++ / Java Projects</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-webdev-roadmap.jpg" alt="Full Stack Web Development" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Web Development</span>
-                            <h3 class="portfolio-title">Full Stack Web Projects</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-eiffel-replica.jpg" alt="Eiffel Tower Replica, Bahria Town" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Bahria Town, Lahore</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-abstract-face.jpg" alt="Graphic Design Concept Art" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Graphic Design</span>
-                            <h3 class="portfolio-title">Concept & Vector Art</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-mall-interior.jpg" alt="Architecture Photography" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Architecture & Interiors</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-video-timeline.jpg" alt="Video Editing Timeline" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Video Editing</span>
-                            <h3 class="portfolio-title">Timeline & Post-Production</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-editing-apps.jpg" alt="Editing Software Suite" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Video Editing</span>
-                            <h3 class="portfolio-title">Editing Toolkit</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-street-sunset.jpg" alt="Sunset Street Photography" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Golden Hour, Lahore</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-social-tree.jpg" alt="Social Media Growth" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Social Media</span>
-                            <h3 class="portfolio-title">Cross-Platform Growth</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-social-illustration.jpg" alt="Social Media Management" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Social Media</span>
-                            <h3 class="portfolio-title">Content Scheduling & Handling</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-building-night.jpg" alt="Night Photography" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Low-Light Shots</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-office-cubicle.jpg" alt="Customer Support Work" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Customer Service</span>
-                            <h3 class="portfolio-title">Client Support</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/portfolio-podium-speaker.jpg" alt="Leadership & Public Speaking" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Leadership</span>
-                            <h3 class="portfolio-title">Team Management</h3>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-img-wrapper">
-                            <img src="./assets/photo-road-trees.jpg" alt="Landscape Photography" loading="lazy">
-                        </div>
-                        <div class="portfolio-item-content">
-                            <span class="portfolio-category">Photography</span>
-                            <h3 class="portfolio-title">Landscape Shots</h3>
-                        </div>
-                    </div>
-
+            <!-- Gallery Modal -->
+            <div class="gallery-modal-overlay" id="gallery-modal-overlay">
+                <div class="gallery-modal" id="gallery-modal">
+                    <button class="cert-modal-close" id="gallery-modal-close" aria-label="Close gallery">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="gallery-modal-body" id="gallery-modal-body"></div>
                 </div>
             </div>
         </section>
@@ -349,7 +347,7 @@
                 <div class="services-right-col">
                     <div class="services-card-stack">
                         <!-- Card 1: Web Development -->
-                        <div class="stack-card card-1 glass-card">
+                        <div class="stack-card card-1 glass-card" data-service="webdev" tabindex="0" role="button" aria-label="View Web Development service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-code"></i></div>
                                 <h4 class="stack-card-title">Web Development</h4>
@@ -361,7 +359,7 @@
                         </div>
 
                         <!-- Card 2: Graphic Design -->
-                        <div class="stack-card card-2 glass-card">
+                        <div class="stack-card card-2 glass-card" data-service="graphicdesign" tabindex="0" role="button" aria-label="View Graphic Design service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-pen-nib"></i></div>
                                 <h4 class="stack-card-title">Graphic Design</h4>
@@ -373,7 +371,7 @@
                         </div>
 
                         <!-- Card 3: Video Editing -->
-                        <div class="stack-card card-3 glass-card">
+                        <div class="stack-card card-3 glass-card" data-service="videoediting" tabindex="0" role="button" aria-label="View Video Editing service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-clapperboard"></i></div>
                                 <h4 class="stack-card-title">Video Editing</h4>
@@ -385,7 +383,7 @@
                         </div>
 
                         <!-- Card 4: Social Media Handling -->
-                        <div class="stack-card card-4 glass-card">
+                        <div class="stack-card card-4 glass-card" data-service="socialmedia" tabindex="0" role="button" aria-label="View Social Media Handling service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-hashtag"></i></div>
                                 <h4 class="stack-card-title">Social Media Handling</h4>
@@ -397,7 +395,7 @@
                         </div>
 
                         <!-- Card 5: Photography -->
-                        <div class="stack-card card-5 glass-card">
+                        <div class="stack-card card-5 glass-card" data-service="photography" tabindex="0" role="button" aria-label="View Photography service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-camera"></i></div>
                                 <h4 class="stack-card-title">Photography</h4>
@@ -409,7 +407,7 @@
                         </div>
 
                         <!-- Card 6: Customer Specialist -->
-                        <div class="stack-card card-6 glass-card">
+                        <div class="stack-card card-6 glass-card" data-service="customerspecialist" tabindex="0" role="button" aria-label="View Customer Specialist service details">
                             <div class="stack-card-inner">
                                 <div class="stack-icon-box"><i class="fa-solid fa-headset"></i></div>
                                 <h4 class="stack-card-title">Customer Specialist</h4>
@@ -423,6 +421,16 @@
                 </div>
             </div>
         </section>
+
+        <!-- Service Detail Modal -->
+        <div class="cert-modal-overlay" id="service-modal-overlay">
+            <div class="cert-modal" id="service-modal">
+                <button class="cert-modal-close" id="service-modal-close" aria-label="Close service details">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="cert-modal-body" id="service-modal-body"></div>
+            </div>
+        </div>
 
         <!-- Reviews / Social Proof Section -->
         <section class="section reviews-section" id="reviews">
